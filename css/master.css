@@ -1,0 +1,95 @@
+:root{
+    --main-color : #e15c1a;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Start Landing page */
+.landing-page{
+    min-height: 100vh;
+    background-image: url(../images/22\ \(1\).jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing-page .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.landing-page header{
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+.landing-page header .logo{
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+}
+.landing-page header .links{
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 15px;
+
+}
+.landing-page header .links li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.landing-page header .links li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.landing-page header .links li a:hover,
+.landing-page header .links li a.active{
+    color: var(--main-color);
+}
+.landing-page .introduction{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+}
+.landing-page .introduction h1{
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+.landing-page .introduction h1 span{
+    color: var(--main-color);
+    position: relative;
+}
+.landing-page .introduction p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+/* End Landing page */
+
+
+
+
+/* Start Animations */
+
+/* End Animations */
